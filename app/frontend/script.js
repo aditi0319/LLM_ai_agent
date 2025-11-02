@@ -6,7 +6,7 @@ document.getElementById("send-btn").addEventListener("click", async () => {
   chatBox.innerHTML += `<div class="user">🧑‍💬 ${query}</div>`;
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/tickets/classify", {
+    const response = await fetch("/tickets/classify", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query })

@@ -14,6 +14,9 @@ venv/
 Thumbs.db
 
 # Models and data (optional)
+# Ignore all pickle/csv/joblib files except your tracked model ones
 *.pkl
+!app/models/classifier.pkl
+!app/models/vectorizer.pkl
 *.csv
 *.joblib
